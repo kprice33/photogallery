@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>photogallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+    <h1>TK Photography</h1>
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li> 
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#top">top</a></li> 
+        </ul>
+    </nav>
+    </header>
+    <main>
+        <section id="intro">
+        <h2>About</h2>
+             <p>Hello!</p>
+             <p>I’m TK and I’m a photographer. I love looking at life through the lens of my camera. Landscape photography is my speciality and it’s taken me all over the world.</p> 
+        </section>
+        
+        <section>
+         <h2>Gallery</h2>
+        <p>Here are some highlights of my work. The locations and year are in the caption.</p> 
+        <div class="gallery">
+            <figure>
+                <img src="images/Chile.png"> 
+                <figcaption class="whitetxt" >Chile, 2001</figcaption>
+            </figure>
+
+            <figure class="up">
+                <img src="images/Guatemala.png">
+                <figcaption class="whitetxt">Guatemala, 1997</figcaption> 
+            </figure>
+
+            <figure>
+                <img src="images/Hawaii.png">
+                <figcaption class="whitetxt">Hawaii, 2010</figcaption>
+            </figure>
+
+            <figure class="up">
+                <img src="images/Iran.png">
+                <figcaption>Iran, 1999</figcaption>
+            </figure>
+
+            <figure class="up">
+                <img src="images/Ireland.png">
+                <figcaption>Ireland, 2012</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/Italy.png">
+                <figcaption>Italy, 2015</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/Moab-Desert.png">
+                <figcaption class="whitetxt">Moab Desert, 2020</figcaption>
+            </figure>
+
+            <figure class="up">
+                <img src="images/Rocky-Mountains.png">
+                <figcaption>Rocky Mountains, 2009</figcaption>
+            </figure>
+
+            <figure class="up">
+                <img src="images/Switzerland.png">
+                <figcaption>Switzerland, 2014</figcaption>
+            </figure>
+
+            <figure class="up">
+                <img src="images/UK.png">
+                <figcaption>UK, 2005</figcaption>
+            </figure>
+
+            <figure class="up">
+                <img src="images/USA.png">
+                <figcaption>USA, 2021</figcaption>
+            </figure>
+
+            <figure class="up">
+                <img src="images/Wyoming.png">
+                <figcaption class="whitetxt">Wyoming, 2021</figcaption>
+            </figure>
+        </div>
+    </section>
+</main>  
+    <section class="contactform"> 
+    <form> 
+    <h2>Contact</h2>
+    <p>Please fill out this form and I’ll connect with you soon.</p>
+        <fieldset>
+            <legend>Your contact information</legend> 
+                <label for="fullname">Name</label>
+                <input type="text" id="fullname" name="fullname" placeholder="Your full name">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email address">
+                <label for="message">Message</label>
+                <input type="text" name="message" id="message" placeholder="What can I help you with?"> 
+                <input type="submit" value="submit">
+        </fieldset>
+    </form>
+</section>
+ <footer>
+    <p><small>Copyright 2021 TK Photography</small></p>
+ </footer>     
+</body>
+</html>

@@ -1,0 +1,317 @@
+/* 
+/*---------CSS RESEST--------*/
+
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* document styling
+
+font-family: Arial, Helvetica, sans-serif;
+
+Color Palette:
+#007d7b (teal)
+#000000 (black)
+#ffffff  (white)
+
+Standard Styles: 
+p {font-size: 1.25em;}
+figcaption, label, input, small {font-size: 1em;}
+nav a {font-size: 1.5em;}
+h1 {font-size: 3em;}
+h2 {font-size: 2em;}
+
+*/
+
+/*add css reset and border box code?*/
+* {
+    box-sizing:border-box;   
+    /* border-color: 20px; */
+    /* border-color: #fff; */
+    margin:0;
+    padding:0;
+  }
+
+html{
+    /* background-color: #000000; */
+    font-family:Arial, Helvetica, sans-serif;
+    /* color:#fff; */
+}
+body{
+    /* width:485px; */
+    margin: 0 auto;
+    background-color:#000;
+    display:flex;
+    flex-direction: column;
+    
+}
+main{
+    padding:20px;
+    background: #fff;
+    
+}
+h1 {
+    background:#fff;
+    color: #007d7b;
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+    padding: 5px 0;
+    text-transform: uppercase;
+    position:relative;
+    margin:0 auto;
+
+}
+nav {
+    background:#000;
+    padding: 15px 0; 
+   
+}
+nav li {
+    display: inline-flex;
+}
+nav a {
+    font-size: 1.5em;
+    padding:15px 0px 15px 0px;
+    margin: 0 25px;
+    text-decoration:none;
+    font-weight:bold;
+    text-transform:uppercase;
+
+}
+ul li a{
+    text-decoration: none; 
+    color:#fff;
+    
+}
+[href="#top"] {
+    position:fixed;
+    bottom: 0px;
+    right: 0px;
+    border-style: solid;
+    padding: 10px;
+    border-width:2px;
+    border-color: #fff;
+    z-index: 1;
+}
+
+h2 {
+    font-size: 2em;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 15px;
+}
+p {
+    font-size: 1.25em;
+    padding-bottom: 15px;;
+}
+
+figcaption, label, input, small {
+    font-size: 1em;
+
+}
+.gallery{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:20px;
+}
+figure{
+    /* margin-left: 12px; */
+    display: flex;
+    flex-direction: column;
+    flex-flow: column-reverse;
+    position: relative;
+    /* color:#fff; */
+}
+figcaption {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    text-transform: uppercase;
+    padding:10px;
+}
+
+[class|="up"]{
+    display: flex;
+    flex-direction: column;
+    flex-flow: column;
+    position: relative; 
+} 
+[class|="whitetxt"]{
+    color:#fff;
+}
+
+/* .down {
+    flex-direction: start;
+} */
+.gallery {
+    padding-bottom:20px;
+}
+/* form sytles*/
+
+form {
+    background-color:#000;
+    color:#fff;
+    position:relative;
+    width:485px;
+    height:300px;
+    padding: 20px;
+    margin-right:0;
+}
+fieldset{
+    display:grid;
+    grid-template-columns: 1fr;
+    margin:0 auto;
+    width: 485px;;
+    
+}
+legend {
+    visibility: hidden;
+}
+label {
+    text-transform: uppercase;
+    padding-top:20px;
+    padding-left: 5px;
+
+    
+}
+input{
+    height: 35px;
+}
+input::placeholder{
+    color:#007d7b;
+    text-transform: uppercase;
+    font-weight:bold;
+    padding: 10px;
+    border:#007d7b
+}
+
+input[type=submit] {
+    border-radius: 12px;
+    width:50%;
+    background-color: #007d7b;
+    color:#fff;
+    margin: 20px auto;
+    border: none;
+} 
+
+footer{
+    position:relative;
+    bottom: 0;
+    margin-top: 150px;
+    width: 100%;
+    /* height:100px; */
+    color:#fff;
+    background-color: #000;
+    text-align:center;
+    text-transform:uppercase;
+    z-index:-1;
+}
+@media only screen and (min-width: 485px){
+    body{
+        width: 485px;
+    }
+}
+@media only screen and (min-width: 880px){
+     body{
+        width: 880px;
+    }
+    h1 {
+        display:flex;
+        justify-content: left;
+        padding-left: 5px;
+    }
+    nav{
+        display:flex;
+        justify-content: center;
+    }
+
+    .gallery{
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+    .contactform{
+        display:flex;
+        justify-content: center;
+    }
+    .contactform p {
+        display:flex;
+        justify-content: center;
+    }
+    form {
+        width: 885px;
+    }
+    fieldset{
+        width: 885px;
+    }
+    input {
+        width:90%;
+    }
+} 
+
+@media only screen and (min-width: 1300px){
+    body{
+        width: 1300px;
+    }
+    nav {
+        display:flex;
+        justify-content: right;
+    }
+    .gallery {
+       grid-template-columns: 1fr 1fr 1fr;
+    }
+    form{
+        width: 1300px;
+    }
+    fieldset{
+       width:1300px;
+    }
+    input {
+        width: 90%;
+    }
+}
